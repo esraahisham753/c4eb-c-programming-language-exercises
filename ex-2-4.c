@@ -7,7 +7,7 @@ int main() {
     printf("Enter line\n");
     
     int i;
-    for (i = 0; scanf("%c", &line[i]) == 1 && i < 1000; i++)
+    for (i = 0; i < 1000 && scanf("%c", &line[i]) == 1 && line[i] != '\n'; i++)
     ;
 
     line[i] = '\0';
